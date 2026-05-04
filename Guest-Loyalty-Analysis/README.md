@@ -9,7 +9,7 @@ Open notebook.ipynb in Jupyter or VS Code.
 * Calculated a baseline Loyalty Enrollment Rate of 51.75%.
 
 ## Project Structure
-A simple text tree showing what the files are.
+A simple text tree showing what the files are.          
 
 ├── Images/             # Plots and charts for the README
 ├── data/               # Raw and processed data
