@@ -10,7 +10,7 @@ We found that nearly 50% of our guests are not yet enrolled in any tier.
 
 2. Marketing Consent Overview               
 The vast majority of guests are reachable via marketing channels.
-![Marketing Consent](images/Marketing_Consent.png)
+![Marketing Consent](images/Marketing-Consent.png)
 
 3. Relationship: Tier vs. Consent          
 Critically, 157 guests in the "None" category have already provided consent—this is our primary growth target.
