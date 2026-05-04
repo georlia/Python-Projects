@@ -11,17 +11,12 @@ Open notebook.ipynb in Jupyter or VS Code.
 ## Project Structure
 A simple text tree showing what the files are.          
 
-├── Images/             # Plots and charts for the README
-├── data/               # Raw and processed data
-├── notebooks/          # Jupyter notebook for analysis
+├── Images/                     Plots and charts for the README        
+├── data/                       Raw and processed data               
+├── notebooks/                  Jupyter notebook for analysis         
 └── README.md
 
-├── data/               # Raw and processed data
-├── images/             # Plots and charts for the README
-├── notebooks/          # Jupyter notebooks for analysis
-├── src/                # Source code (.py files)
-├── requirements.txt    # List of libraries used
-└── README.md
+
 
 ## Technologies Used
 * Pandas for data manipulation.
