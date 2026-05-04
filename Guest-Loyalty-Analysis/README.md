@@ -4,7 +4,7 @@ A Python-based analysis tool that identifies high-potential guests for loyalty p
 (Open notebook.ipynb in Jupyter or VS Code.)
 
 ## Visual Insights
-Loyalty Distribution: I found that nearly 50% of the guests are not yet enrolled in any tier.
+I found that nearly 50% of the guests are not yet enrolled in any tier.
 ![Loyalty Distribution](images/Loyalty-Tiers.png)
 
 ## Marketing Consent Overview              
