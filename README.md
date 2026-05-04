@@ -1,2 +1,2 @@
 # Python-Projects
-Python Projects from Datacamp, Maven Analytics
+Python Projects from Datacamp
