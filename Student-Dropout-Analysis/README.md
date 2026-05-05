@@ -1,6 +1,6 @@
 # 👨‍🎓 Student Dropout Analysis
 
-(Open notebook.ipynb in Jupyter or VS Code.)
+(Open notebook.ipynb in Jupyter or VS Code)
 
 ## Visual Insights
 
