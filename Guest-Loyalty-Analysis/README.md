@@ -1,5 +1,5 @@
 # 🧑‍💼Guest Loyalty Analysis
-A Python-based analysis tool that identifies high-potential guests for loyalty program enrollment.
+This Python-based analytical tool evaluates guest data to pinpoint high-value customers who are ideal candidates for loyalty program expansion. By leveraging data visualization and behavioral analysis, it identifies a primary growth segment of 157 guests ready for immediate enrollment.
 
 (Open notebook.ipynb in Jupyter or VS Code)
 
