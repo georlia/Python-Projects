@@ -72,7 +72,7 @@ A simple text tree showing what the files are.
 
 * **Seaborn & Matplotlib**: For creating detailed statistical visualizations.
 
-* **Juputer**: For an interactive and documented analysis environment.
+* **Jupyter**: For an interactive and documented analysis environment.
 
   <img width="1510" height="628" alt="image" src="https://github.com/user-attachments/assets/d096b733-da9f-4b5a-84b1-109bc062b264" />
 
