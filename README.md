@@ -2,3 +2,5 @@
 
 ## 1. Guest Loyalty Analysis
 A Python-based analysis tool that identifies high-potential guests for loyalty program enrollment.
+
+## 2. Student Dropout Analysis
