@@ -7,4 +7,4 @@ This Python-based analytical tool evaluates guest data to pinpoint high-value cu
 
 ## [2. Student Dropout Analysis](./Student-Dropout-Analysis/)
 This project aims to predict the likelihood of student dropout using various machine learning algorithms. By analyzing lifestyle habits, academic performance, and demographic data, the model provides data-driven insights to help educational institutions implement early intervention strategies.
-<img width="647" height="275" alt="image" src="https://github.com/user-attachments/assets/d096b733-da9f-4b5a-84b1-109bc062b264" />
+<img width="1510" height="628" alt="image" src="https://github.com/user-attachments/assets/d096b733-da9f-4b5a-84b1-109bc062b264" />
