@@ -34,3 +34,5 @@ A simple text tree showing what the files are.
 * Pandas for data manipulation.
 * Seaborn/Matplotlib for visualization.
 * Jupyter for interactive analysis.
+
+<img width="1510" height="628" alt="Ways-to-Increase-Customer-Loyalty1-1" src="https://github.com/user-attachments/assets/b5aa55fd-3653-45a8-8443-cfe6bd9ffc1c" />
