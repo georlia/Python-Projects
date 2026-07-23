@@ -55,7 +55,7 @@ A simple text tree showing what the files are.
 
 * **Scikit-Learn**: For implementing and tuning machine learning models.
 
-* **Seaborn & Matplotlib**: For creating detailed statistical visualizations.
+* **Matplotlib**: For creating detailed statistical visualizations.
 
 * **Jupyter**: For an interactive and documented analysis environment.
 
