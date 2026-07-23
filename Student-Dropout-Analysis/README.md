@@ -15,35 +15,20 @@ The heatmap displays the Pearson correlation coefficients between numerical feat
 
 ![images/feature_correlation_matrix.png](images/feature_correlation_matrix.png)
 
-### 3. Confusion Matrix: Logistic Regression
-The confusion matrix for the Logistic Regression model illustrates its performance in correctly identifying true negatives while struggling with a higher number of false negatives.
+### 3. Confusion Matrix - ROC Curve: Logistic Regression
+The confusion matrix for the Logistic Regression model illustrates its performance in correctly identifying true negatives while struggling with a higher number of false negatives. The ROC curve for Logistic Regression shows an AUC of 0.82, indicating a strong ability to distinguish between student dropout and retention classes.
 
-![images/confusion_matrix_logistic_regression.png](images/confusion_matrix_logistic_regression.png)
+![images/confusion_matrix_roc_regression.png](images/confusion_matrix_roc_regression.png)
 
-### 4. ROC Curve: Logistic Regression
-The ROC curve for Logistic Regression shows an AUC of 0.82, indicating a strong ability to distinguish between student dropout and retention classes.
+### 4. Confusion Matrix - ROC Curve: Naive Bayes
+The Naive Bayes confusion matrix reveals a high recall for the dropout class but also a significant number of false positives compared to other models. The Naive Bayes ROC curve achieves an AUC of 0.78, reflecting its probabilistic approach to classification despite a lower overall accuracy.
 
-![images/roc_logistic_regression.png](images/roc_logistic_regression.png)
+![images/confusion_matrix_roc_bayes.png](images/confusion_matrix_roc_baye.png)
 
-### 5. Confusion Matrix: Naive Bayes
-The Naive Bayes confusion matrix reveals a high recall for the dropout class but also a significant number of false positives compared to other models.
+### 7. Confusion Matrix - ROC Curve: Random Forest
+The Random Forest confusion matrix demonstrates the ensemble model's effectiveness in maintaining high accuracy for both student categories. The Random Forest ROC curve yields an AUC of 0.81, confirming its robustness and competitive performance in predicting student dropout likelihood.
 
-![images/confusion_matrix_naive_bayes.png](images/confusion_matrix_naive_bayes.png)
-
-### 6. ROC Curve: Naive Bayes
-The Naive Bayes ROC curve achieves an AUC of 0.78, reflecting its probabilistic approach to classification despite a lower overall accuracy.
-
-![images/roc_naive_bayes.png](images/roc_naive_bayes.png)
-
-### 7. Matrix: Random Forest
-The Random Forest confusion matrix demonstrates the ensemble model's effectiveness in maintaining high accuracy for both student categories.
-
-![images/confusion_matrix_random_forest.png](images/confusion_matrix_random_forest.png)
-
-### 8. ROC Curve: Random Forest
-The Random Forest ROC curve yields an AUC of 0.81, confirming its robustness and competitive performance in predicting student dropout likelihood.
-
-![images/roc_random_forest.png](images/roc_random_forest.png)
+![images/confusion_matrix_roc_forest.png](images/confusion_matrix_roc_forest.png)
 
 
 ## Key Features / Insights
