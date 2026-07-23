@@ -25,7 +25,7 @@ The Naive Bayes confusion matrix reveals a high recall for the dropout class but
 
 ![images/confusion_matrix_roc_bayes.png](images/confusion_matrix_roc_baye.png)
 
-### 7. Confusion Matrix - ROC Curve: Random Forest
+### 5. Confusion Matrix - ROC Curve: Random Forest
 The Random Forest confusion matrix demonstrates the ensemble model's effectiveness in maintaining high accuracy for both student categories. The Random Forest ROC curve yields an AUC of 0.81, confirming its robustness and competitive performance in predicting student dropout likelihood.
 
 ![images/confusion_matrix_roc_forest.png](images/confusion_matrix_roc_forest.png)
