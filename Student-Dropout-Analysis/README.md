@@ -1,7 +1,5 @@
 # 👨‍🎓 Student Dropout Analysis
-This project aims to predict the likelihood of student dropout using various machine learning algorithms. By analyzing lifestyle habits, academic performance, and demographic data, the model provides data-driven insights to help educational institutions implement early intervention strategies.           
-(Open notebook.ipynb in Jupyter or VS Code)
-
+In this project i compared three machine learning models to predict student dropout risk, achieving 0.82 ROC-AUC and 76% recall with the best-performing model — prioritizing the detection of at-risk students over raw accuracy, to support early intervention strategies.          
 ## Visual Insights
 Below are the key evaluation metrics and distributions from the analysis:
 
