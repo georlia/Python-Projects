@@ -23,8 +23,8 @@ Critically, 157 guests in the "None" category have already provided consent—th
 ## Project Structure
 ```
 ├── Images/     ---> Plots and charts for the README        
-├── data/       --->                Raw and processed data               
-├── notebooks/  --->                Jupyter notebook for analysis         
+├── data/       ---> Raw and processed data               
+├── notebooks/  ---> Jupyter notebook for analysis         
 └── README.md
 ```
 
