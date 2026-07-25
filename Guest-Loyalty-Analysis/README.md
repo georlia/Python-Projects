@@ -21,13 +21,12 @@ Critically, 157 guests in the "None" category have already provided consent—th
 * Calculated a baseline Loyalty Enrollment Rate of 51.75%.
 
 ## Project Structure
-A simple text tree showing what the files are.          
-
+```
 ├── Images/     ---> Plots and charts for the README        
 ├── data/       --->                Raw and processed data               
 ├── notebooks/  --->                Jupyter notebook for analysis         
 └── README.md
-
+```
 
 
 ## Technologies Used
