@@ -1,5 +1,8 @@
 # 👨‍🎓 Student Dropout Analysis
-In this project i analyzed 10.000 student records to compare three machine learning models predicting dropout risk, achieving 0.82 ROC-AUC and 76% recall with the best-performing model — prioritizing detection of at-risk students over raw accuracy, to support early intervention strategies for educational institutions.
+I analyzed 10,000 student records to compare three machine learning models predicting dropout risk, achieving 0.82 ROC-AUC and 76% recall with the best-performing model — prioritizing detection of at-risk students over raw accuracy, to support early intervention strategies for educational institutions.
+
+## Dataset
+Synthetic dataset of 10,000 student records with 19 features covering demographic, academic, and lifestyle indicators (e.g. GPA, CGPA, attendance rate, study hours). Target variable: binary dropout classification, with a class imbalance of 76.5% retention vs. 23.5% dropout.
 
 ## Visual Insights
 Below are the key evaluation metrics and distributions from the analysis:
@@ -29,34 +32,50 @@ The Random Forest confusion matrix demonstrates the ensemble model's effectivene
 
 ![images/confusion_matrix_roc_forest.png](images/confusion_matrix_roc_forest.png)
 
+## Preprocessing
+* **Pipeline:** Built with `ColumnTransformer`, applying imputation for missing values, scaling for numerical features, and one-hot encoding for categorical features.
+* **Class Imbalance Handling:** Addressed via stratified train-test split, `StratifiedKFold` cross-validation, and `class_weight='balanced'` on supported models.
+
+## Hyperparameter Tuning
+* **Logistic Regression & Gaussian Naive Bayes:** Tuned using `GridSearchCV`
+* **Random Forest:** Tuned using `RandomizedSearchCV`
+* **Cross-validation strategy:** `StratifiedKFold`, to preserve class balance across folds
+
+## Model Comparison
+
+| Model | Test ROC-AUC | Recall (Dropout) | Accuracy | F1 | Notes |
+|---|---|---|---|---|---|
+| **Logistic Regression** | **0.8203** | **0.7622** | — | — | ✅ Selected — best generalization |
+| Gaussian Naive Bayes | ~0.78 | 0.6773 | 0.7780 | 0.5896 | Highest accuracy, lower recall |
+| Random Forest | ~0.81 | — | — | — | Most stable CV, but overfit (train-test gap ≈ 0.09) |
+
+## Final Model Selection
+Logistic Regression was selected as the final model because it combined the highest generalization performance (Test ROC-AUC 0.8203), the highest Recall for the dropout class (0.7622) — critical, since missing an at-risk student is a more costly error than a false alarm — a minimal train-test gap, and strong interpretability, an important factor for educational institutions that need to explain and act on model predictions.
 
 ## Key Features / Insights
-* **Model Comparison**: Evaluated Logistic Regression, Naive Bayes, and Random Forest to find the best balance between precision and recall.
+* **Model Comparison:** Evaluated Logistic Regression, Naive Bayes, and Random Forest to find the best balance between precision and recall.
+* **Feature Importance:** Identified that factors such as GPA, attendance rate, and study hours are the most significant predictors of student success.
+* **Class Imbalance Handling:** Addressed the disproportionate number of students who stay vs. those who drop out to ensure model reliability.
+* **Actionable Metrics:** Achieved a high ROC-AUC score (0.82), indicating strong model capability in distinguishing between dropout and non-dropout cases.
 
-* **Feature Importance**: Identified that factors such as GPA, attendance rate, and study hours are the most significant predictors of student success.
+## Business Recommendation
+These results suggest that an educational institution could use this model to flag at-risk students early in the term, based on GPA, attendance, and study hour trends, and route them toward targeted interventions (academic advising, mentoring, financial support) before dropout risk escalates. Given the model's Recall of 76%, roughly 3 out of 4 at-risk students would be correctly flagged for early intervention.
 
-* **Class Imbalance Handling**: Addressed the disproportionate number of students who stay vs. those who drop out to ensure model reliability.
-
-* **Actionable Metrics**: Achieved a high ROC-AUC score, indicating strong model capability in distinguishing between dropout and non-dropout cases
+## Challenges & Limitations
+* **Synthetic Data:** The dataset is synthetically generated, so real-world noise and unmeasured factors (e.g. personal circumstances, mental health) are not captured — results should be validated on real institutional data before deployment.
+* **Recall vs. Precision Trade-off:** Prioritizing Recall means accepting more false positives (students flagged who wouldn't have dropped out), which has resource implications for the institution's intervention capacity.
 
 ## Project Structure
-A simple text tree showing what the files are.          
-
-├── images/     --->                Plots and charts for the README        
-├── data/       --->                Raw and processed data               
-├── notebooks/  --->                Jupyter notebook for analysis         
+```
+├── data/         --->   Raw dataset (student_dropout_dataset.csv)
+├── images/       --->   Plots and charts for the README
+├── notebooks/    --->   Jupyter notebook with full analysis
 └── README.md
+```
 
 ## Technologies Used
-* **Python**: The core language used for the analysis.
-
-* **Pandas**: For robust data manipulation and cleaning.
-
-* **Scikit-Learn**: For implementing and tuning machine learning models.
-
-* **Matplotlib**: For creating detailed statistical visualizations.
-
-* **Jupyter**: For an interactive and documented analysis environment.
-
-  <img width="1510" height="628" alt="image" src="https://github.com/user-attachments/assets/d096b733-da9f-4b5a-84b1-109bc062b264" />
-
+* **Python** — core language used for the analysis
+* **Pandas** — data manipulation and cleaning
+* **Scikit-Learn** — preprocessing pipeline, model training, GridSearchCV/RandomizedSearchCV
+* **Matplotlib** — statistical visualizations
+* **Jupyter** — interactive, documented analysis environment
