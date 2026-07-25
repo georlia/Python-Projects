@@ -1,5 +1,5 @@
 # 👨‍🎓 Student Dropout Analysis
-In this project, i analyzed 10.000 student records to compare three machine learning models predicting dropout risk, achieving 0.82 ROC-AUC and 76% recall with the best-performing model — prioritizing detection of at-risk students over raw accuracy, to support early intervention strategies for educational institutions.
+In this project i analyzed 10.000 student records to compare three machine learning models predicting dropout risk, achieving 0.82 ROC-AUC and 76% recall with the best-performing model — prioritizing detection of at-risk students over raw accuracy, to support early intervention strategies for educational institutions.
 
 ## Visual Insights
 Below are the key evaluation metrics and distributions from the analysis:
@@ -37,7 +37,7 @@ The Random Forest confusion matrix demonstrates the ensemble model's effectivene
 
 * **Class Imbalance Handling**: Addressed the disproportionate number of students who stay vs. those who drop out to ensure model reliability.
 
-* ** Actionable Metrics: Achieved a high ROC-AUC score, indicating strong model capability in distinguishing between dropout and non-dropout cases
+* **Actionable Metrics**: Achieved a high ROC-AUC score, indicating strong model capability in distinguishing between dropout and non-dropout cases
 
 ## Project Structure
 A simple text tree showing what the files are.          
