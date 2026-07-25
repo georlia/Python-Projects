@@ -1,5 +1,5 @@
 # 👨‍🎓 Student Dropout Analysis
-In this project i compared three machine learning models to predict student dropout risk, achieving 0.82 ROC-AUC and 76% recall with the best-performing model — prioritizing the detection of at-risk students over raw accuracy, to support early intervention strategies.          
+In this project, i compared three machine learning models to predict student dropout risk, achieving 0.82 ROC-AUC and 76% recall with the best-performing model — prioritizing the detection of at-risk students over raw accuracy, to support early intervention strategies.          
 ## Visual Insights
 Below are the key evaluation metrics and distributions from the analysis:
 
