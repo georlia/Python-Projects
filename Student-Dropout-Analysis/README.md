@@ -22,7 +22,7 @@ The confusion matrix for the Logistic Regression model illustrates its performan
 ### 4. Confusion Matrix - ROC Curve: Naive Bayes
 The Naive Bayes confusion matrix reveals a high recall for the dropout class but also a significant number of false positives compared to other models. The Naive Bayes ROC curve achieves an AUC of 0.78, reflecting its probabilistic approach to classification despite a lower overall accuracy.
 
-![images/confusion_matrix_roc_bayes.png](images/confusion_matrix_roc_baye.png)
+![images/confusion_matrix_roc_bayes.png](images/confusion_matrix_roc_bayes.png)
 
 ### 5. Confusion Matrix - ROC Curve: Random Forest
 The Random Forest confusion matrix demonstrates the ensemble model's effectiveness in maintaining high accuracy for both student categories. The Random Forest ROC curve yields an AUC of 0.81, confirming its robustness and competitive performance in predicting student dropout likelihood.
