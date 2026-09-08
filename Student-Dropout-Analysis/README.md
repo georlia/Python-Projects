@@ -15,7 +15,7 @@ This bar chart visualizes the distribution of the target variable, showing a sig
 ### 2. Feature Correlation Matrix
 The heatmap displays the Pearson correlation coefficients between numerical features, highlighting strong relationships between academic metrics like GPA and CGPA.
 
-![images/feature_correlation_matrix.png](images/feature_correlation_matrix.png)
+![images/correlation_matrix.png](images/correlation_matrix.png)
 
 ### 3. Confusion Matrix - ROC Curve: Logistic Regression
 The confusion matrix for the Logistic Regression model illustrates its performance in correctly identifying true negatives while struggling with a higher number of false negatives. The ROC curve for Logistic Regression shows an AUC of 0.82, indicating a strong ability to distinguish between student dropout and retention classes.
